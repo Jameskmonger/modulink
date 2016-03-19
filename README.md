@@ -36,6 +36,18 @@ To install `modulink` globally, run the following command:
 
 (this command will usually need to be performed as admin or run with `sudo`)
 
+You can then use it like this:
+
+    modulink --name=YOUR_PACKAGE_NAME
+
+This will create a folder called `YOUR_PACKAGE_NAME` in the `node_modules` folder which contains your folder contents, as if it were installed from npm.
+
+You can then use it easily in `require` and `import` statements, such as:
+
+```javascript
+var someFile = require('YOUR_PACKAGE_NAME/src/someFile');
+```
+
 ## License
 
 [MIT](/LICENSE)
