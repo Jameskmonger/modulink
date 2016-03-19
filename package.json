@@ -6,6 +6,7 @@
   "scripts": {
     "test": ""
   },
+  "bin": "modulink",
   "author": "James Monger <jameskmonger@hotmail.co.uk>",
   "license": "MIT",
   "dependencies": {
