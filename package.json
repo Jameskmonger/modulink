@@ -10,7 +10,8 @@
   "author": "James Monger <jameskmonger@hotmail.co.uk>",
   "license": "MIT",
   "dependencies": {
-    "fs-symlink": "^1.2.1"
+    "fs-symlink": "^1.2.1",
+    "minimist": "^1.2.0"
   },
   "repository": {
     "type": "git",
