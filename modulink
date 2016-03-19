@@ -1,3 +1,4 @@
 #!/usr/bin/env node
 
-var link = require("fs-symlink");
+var link = require("fs-symlink"),
+    path = require("path");
