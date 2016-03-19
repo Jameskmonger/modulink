@@ -14,7 +14,7 @@ To install `modulink` locally, run the following command:
 
     npm install --save-dev modulink
 
-(as `modulink` is primarily used for testing, it should be saved as a developer dependency rather than a user one).
+(as `modulink` is primarily used for testing, it should be saved as a developer dependency rather than a user one)
 
 You can then use it like this:
 
@@ -27,6 +27,14 @@ You can then use it easily in `require` and `import` statements, such as:
 ```javascript
 var someFile = require('YOUR_PACKAGE_NAME/src/someFile');
 ```
+
+### Global
+
+To install `modulink` globally, run the following command:
+
+    npm install -g modulink
+
+(this command will usually need to be performed as admin or run with `sudo`)
 
 ## License
 
