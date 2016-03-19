@@ -1,4 +1,5 @@
 #!/usr/bin/env node
 
 var link = require("fs-symlink"),
-    path = require("path");
+    path = require("path"),
+    minimist = require("minimist");
