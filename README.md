@@ -48,6 +48,34 @@ You can then use it easily in `require` and `import` statements, such as:
 var someFile = require('YOUR_PACKAGE_NAME/src/someFile');
 ```
 
+## Why?
+
+I was tired of having to do relative path links when testing projects.
+
+For example, with a folder structure like this:
+
+- project
+    - src
+        - utils
+            - util-class.js
+    - test
+        - utils
+            - util-class.test.js
+
+In `util-class.test.js`, you'd have to import the `util-class.js` file with a statement like this:
+
+```javascript
+var UtilClass = require('../../src/utils/util-class');
+```
+
+However with `modulink`, you could import it like this:
+
+```javascript
+var UtilClass = require('project/src/utils/util-class');
+```
+
+That would be the syntax **regardless** of how deep you were in the `test` directory!
+
 ## License
 
 [MIT](/LICENSE)
