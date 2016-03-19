@@ -7,5 +7,8 @@
     "test": ""
   },
   "author": "James Monger <jameskmonger@hotmail.co.uk>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "fs-symlink": "^1.2.1"
+  }
 }
