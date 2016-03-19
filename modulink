@@ -14,3 +14,14 @@ if (!args.name) {
 var cwd = process.cwd();
 var fromLink = cwd;
 var toLink = path.join(cwd, 'node_modules', args.name);
+
+link(fromLink, toLink, 'junction')
+    .then(function () {
+        console.log('Link created, from:');
+        console.log('    ' + fromLink);
+        console.log('to:');
+        console.log('    ' + toLink);
+    })
+    .catch(function(err) {
+        console.error(err);
+    });
