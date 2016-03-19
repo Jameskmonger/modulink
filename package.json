@@ -11,5 +11,13 @@
   "license": "MIT",
   "dependencies": {
     "fs-symlink": "^1.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jameskmonger/modulink.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Jameskmonger/modulink/issues"
+  },
+  "homepage": "https://github.com/Jameskmonger/modulink"
 }
