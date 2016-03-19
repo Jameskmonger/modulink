@@ -3,3 +3,5 @@
 var link = require('fs-symlink'),
     path = require('path'),
     minimist = require('minimist');
+
+var args = minimist(process.argv.slice(2));
