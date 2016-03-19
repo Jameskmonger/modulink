@@ -8,6 +8,7 @@ var args = minimist(process.argv.slice(2));
 
 if (!args.name) {
     console.log('Usage:\n    --name PACKAGE_NAME (--name modulink)');
+    return;
 }
 
 var cwd = process.cwd();
