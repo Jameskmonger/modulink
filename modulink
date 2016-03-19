@@ -12,3 +12,5 @@ if (!args.name) {
 }
 
 var cwd = process.cwd();
+var fromLink = cwd;
+var toLink = path.join(cwd, 'node_modules', args.name);
