@@ -1,0 +1,11 @@
+{
+  "name": "modulink",
+  "version": "0.0.1",
+  "description": "Symbolically link your own module for testing",
+  "main": "",
+  "scripts": {
+    "test": ""
+  },
+  "author": "James Monger <jameskmonger@hotmail.co.uk>",
+  "license": "MIT"
+}
