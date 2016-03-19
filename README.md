@@ -16,6 +16,18 @@ To install `modulink` locally, run the following command:
 
 (as `modulink` is primarily used for testing, it should be saved as a developer dependency rather than a user one).
 
+You can then use it like this:
+
+    node ./node_modules/.bin/modulink --name=YOUR_PACKAGE_NAME
+
+This will create a folder called `YOUR_PACKAGE_NAME` in the `node_modules` folder which contains your folder contents, as if it were installed from npm.
+
+You can then use it easily in `require` and `import` statements, such as:
+
+```javascript
+var someFile = require('YOUR_PACKAGE_NAME/src/someFile');
+```
+
 ## License
 
 [MIT](/LICENSE)
