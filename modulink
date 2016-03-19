@@ -7,7 +7,9 @@ var link = require('fs-symlink'),
 var args = minimist(process.argv.slice(2));
 
 if (!args.name) {
-    console.log('Usage:\n    --name PACKAGE_NAME (--name modulink)');
+    console.log('Usage:');
+    console.log('    --name PACKAGE_NAME');
+    console.log('        (--name modulink)');
     return;
 }
 
