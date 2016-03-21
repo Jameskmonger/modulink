@@ -4,20 +4,21 @@ var link = require('fs-symlink'),
     path = require('path'),
     minimist = require('minimist'),
     indent = require('indenthero'),
-    validateArguments = require('./validateArguments');
+    validateArguments = require('./validateArguments'),
+    syntax = require('./syntax');
 
 var args = minimist(process.argv.slice(2));
 
-var issues = validateArguments(args);
+var validArgs = validateArguments(args);
 
-if (issues.length > 0) {
+if (!validArgs) {
     console.log('Usage:');
 
-    for (var i = 0; i < issues.length; i++) {
-        var issue = issues[i];
+    for (var i = 0; i < syntax.length; i++) {
+        var param = syntax[i];
 
-        var example = indent('(' + issue.example + ')');
-        var output = indent(issue.syntax + '\n' + example);
+        var example = indent('(' + param.example + ')');
+        var output = indent(param.syntax + '\n' + example);
 
         console.log(output);
     }
