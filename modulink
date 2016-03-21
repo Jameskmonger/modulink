@@ -3,6 +3,7 @@
 var link = require('fs-symlink'),
     path = require('path'),
     minimist = require('minimist'),
+    indent = require('indenthero'),
     validateArguments = require('./validateArguments');
 
 var args = minimist(process.argv.slice(2));
