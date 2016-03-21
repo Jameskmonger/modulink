@@ -32,7 +32,7 @@ if (args.target) {
 }
 
 var cwd = process.cwd();
-var fromLink = cwd;
+var fromLink = path.join(cwd, target);
 var toLink = path.join(cwd, 'node_modules', args.name);
 
 link(fromLink, toLink, 'junction')
