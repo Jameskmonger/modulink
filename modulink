@@ -7,12 +7,21 @@ var link = require('fs-symlink'),
 
 var args = minimist(process.argv.slice(2));
 
+var issues = validateArguments(args);
+
+if (issues.length > 0) {
+    console.log(issues);
+    return;
+}
+
+/*
 if (!args.name) {
     console.log('Usage:');
     console.log('    --name PACKAGE_NAME');
     console.log('        (--name modulink)');
     return;
 }
+*/
 
 var cwd = process.cwd();
 var fromLink = cwd;
