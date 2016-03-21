@@ -25,15 +25,6 @@ if (issues.length > 0) {
     return;
 }
 
-/*
-if (!args.name) {
-    console.log('Usage:');
-    console.log('    --name PACKAGE_NAME');
-    console.log('        (--name modulink)');
-    return;
-}
-*/
-
 var cwd = process.cwd();
 var fromLink = cwd;
 var toLink = path.join(cwd, 'node_modules', args.name);
