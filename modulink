@@ -11,7 +11,17 @@ var args = minimist(process.argv.slice(2));
 var issues = validateArguments(args);
 
 if (issues.length > 0) {
-    console.log(issues);
+    console.log('Usage:');
+
+    for (var i = 0; i < issues.length; i++) {
+        var issue = issues[i];
+
+        var example = indent('(' + issue.example + ')');
+        var output = indent(issue.syntax + '\n' + example);
+
+        console.log(output);
+    }
+
     return;
 }
 
