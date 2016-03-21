@@ -2,16 +2,11 @@
 
     mod.exports = function (args) {
 
-        var issues = [];
-
         if (!args.name) {
-            issues.push({
-                syntax: '--name PACKAGE_NAME',
-                example: '--name modulink'
-            });
+            return false;
         }
 
-        return issues;
+        return true;
 
     };
 
