@@ -11,7 +11,8 @@
   "license": "MIT",
   "dependencies": {
     "fs-symlink": "^1.2.1",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "indenthero": "^1.0.2"
   },
   "repository": {
     "type": "git",
