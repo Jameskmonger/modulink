@@ -71,7 +71,7 @@ var UtilClass = require('../../src/utils/util-class');
 However with `modulink`, you could import it like this:
 
 ```javascript
-var UtilClass = require('project/src/utils/util-class');
+var UtilClass = require('project/utils/util-class');
 ```
 
 That would be the syntax **regardless** of how deep you were in the `test` directory!
