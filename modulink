@@ -20,7 +20,7 @@ if (!validArgs) {
         var example = indent('(' + param.example + ')');
         var output = indent(param.syntax + '\n' + example);
 
-        console.log(output);
+        console.log(output + '\n');
     }
 
     return;
