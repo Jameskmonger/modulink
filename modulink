@@ -26,6 +26,11 @@ if (!validArgs) {
     return;
 }
 
+var target = './';
+if (args.target) {
+    target = args.target;
+}
+
 var cwd = process.cwd();
 var fromLink = cwd;
 var toLink = path.join(cwd, 'node_modules', args.name);
